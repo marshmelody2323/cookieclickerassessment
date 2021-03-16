@@ -11,6 +11,7 @@ public class AutoCookie : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        CookieIncrease = GlobalBaker.bakePerSec;
         InternalIncrease = CookieIncrease;
         if (CreatingCookie == false)
         {

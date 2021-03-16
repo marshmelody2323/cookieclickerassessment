@@ -7,9 +7,13 @@ public class SellCookie : MonoBehaviour
 {
     public GameObject textbox;
     public GameObject statusBox;
+    public AudioSource cashOne;
+    public AudioSource cashTwo;
+    public int generateTone;
 
     public void ClickTheButton()
     {
+        generateTone = Random.Range(1, 3);
         if (GlobalCookies.CookieCount == 0)
         {
             statusBox.GetComponent<Text>().text = "Not enough cookies to sell.";
@@ -17,6 +21,14 @@ public class SellCookie : MonoBehaviour
         }
         else
         {
+            if (generateTone == 1)
+            {
+                cashOne.Play();
+            }
+            if (generateTone == 2)
+            {
+                cashTwo.Play();
+            }
             GlobalCookies.CookieCount -= 1;
             GlobalCash.CashCount += 1;
         }
