@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class AutoSell : MonoBehaviour
 {
+    //Initialises variables
+
     public bool SellingCookie = false;
     public static int CashIncrease = 1;
     public int InternalIncrease;
@@ -20,6 +22,8 @@ public class AutoSell : MonoBehaviour
         }
     }
 
+
+    //Sells a cookie for money automatically every (1) second
     IEnumerator SellTheCookie()
     {
         if (GlobalCookies.CookieCount == 0)

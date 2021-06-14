@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class AutoCookie : MonoBehaviour
 {
+    //Initialises variables
+
     public bool CreatingCookie = false;
     public static int CookieIncrease = 1;
     public int InternalIncrease;
@@ -16,10 +18,12 @@ public class AutoCookie : MonoBehaviour
         if (CreatingCookie == false)
         {
             CreatingCookie = true;
+            //Creates cookies automatically
             StartCoroutine(CreateTheCookie());
         }
     }
 
+    //Auto system to "auto click" cookies
     IEnumerator CreateTheCookie()
     {
         GlobalCookies.CookieCount += InternalIncrease;

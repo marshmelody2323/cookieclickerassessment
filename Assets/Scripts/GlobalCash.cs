@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class GlobalCash : MonoBehaviour
 {
+    //Initialises variables
     public static int CashCount;
     public GameObject CashDisplay;
     public int InternalCash;
@@ -13,10 +14,9 @@ public class GlobalCash : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Internally counted total cash amount
         InternalCash = CashCount;
+        //Displays cash total on screen
         CashDisplay.GetComponent<Text>().text = "$" + InternalCash;
-
-    
-
     }
 }

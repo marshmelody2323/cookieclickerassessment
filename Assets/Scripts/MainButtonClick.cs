@@ -8,9 +8,8 @@ public class MainButtonClick : MonoBehaviour
 
     public void ClickTheButton()
     {
+        //Clicks the buttons and makes cookies
         GlobalCookies.CookieCount += 1;
-
-
     }
 
 

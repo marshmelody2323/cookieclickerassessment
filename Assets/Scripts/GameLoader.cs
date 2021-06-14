@@ -12,6 +12,7 @@ public class GameLoader : MonoBehaviour
     public int savedValue;
 
     // Start is called before the first frame update
+    // Playerprefs to save each variable in the game save
     void Start()
     {
         if (MainMenuOptions.isLoading == true)

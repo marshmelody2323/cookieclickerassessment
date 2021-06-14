@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class PurchaseLog : MonoBehaviour
 {
+    //Initialises variables
     public GameObject AutoCookie;
     public GameObject AutoSell;
     public AudioSource playSound;
 
+    //Auto bakes cookies
     public void StartAutoCookie()
     {
         playSound.Play();
@@ -19,6 +21,7 @@ public class PurchaseLog : MonoBehaviour
         GlobalBaker.numberOfBakers += 1;
     }
 
+    //Auto sells cookies
     public void StartAutoSell()
     {
         playSound.Play();

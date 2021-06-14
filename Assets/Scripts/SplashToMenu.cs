@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class SplashToMenu : MonoBehaviour
 {
     // Start is called before the first frame update
+    // Loads and automatically goes past the splash screen
     void Start()
     {
         StartCoroutine(LoadMenu());
